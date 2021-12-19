@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript課題③ todoリスト</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>ToDoリスト</h1>
+
+    <div class="radio-button">
+        <input type="radio" name="status" id="all" value="1" onclick="radioButtonsAction()" checked="checked">
+        <label for="all">全て</label>
+    </div>
+    <div class="radio-button">
+        <input type="radio" name="status" id="in-work" value="2" onclick="radioButtonsAction()">
+        <label for="in-work">作業中</label>
+    </div>
+    <div class="radio-button">
+        <input type="radio" name="status" id="completed" value="3" onclick="radioButtonsAction()">
+        <label for="completed">完了</label>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>コメント</th>
+                <th>状態</th>
+            </tr>
+        </thead>
+        <tbody id="task-list"></tbody>
+    </table>
+
+    <h2>新規タスクの追加</h2>
+
+    <div class="input-form">
+        <label for="new-task"></label>
+        <input type="text" name="new-task" id="new-task">
+
+        <button id="new-task-add">追加</button>
+    </div>
+
+    <script src="JavaScript/script.js"></script>
+
+</body>
+
+</html>
